@@ -1,0 +1,22 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--footer-pd-inline);
+    padding-block: 18px;
+    border-top: 1px solid var(--text);
+}
+
+.footer__copy{
+    font-size: 32px;
+    width: fit-content;
+}
+
+@media (width <= 376px) {
+    .footer{
+        flex-direction: column;
+    }
+    .footer__copy{
+        font-size: 20px;
+    }
+}

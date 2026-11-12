@@ -1,0 +1,49 @@
+:root{
+    --text: #333333;    
+    --bg: #EBEFF2;
+    --link: #000;
+    --link-hover: #243E52;
+    --h1-font-size: 48px;
+    --h2-font-size: 48px;
+    --h3-font-size: 28px;
+    --heading-mg-bottom: 40px;
+
+    --main-mg-block-end: 42px;
+    --main-mg-block-start: 42px;
+    --card-btn-font-size: 24px;
+
+    --banner-padding-inline: 95px;
+    --banner-padding-top: 274px;
+    --banner-padding-bottom: 113px;
+
+    --hero-mg-bottom: 51px;
+    --hero-width: 91%;
+    --hero-btn-pd: 30px;
+    --hero-text-font-size: 28px;
+    --hero-btn-font-size: 28px;
+
+    --nav-link-font-size: clamp(24px, calc(21.183px + 0.751vw), 32px);
+    --login-button-fs: clamp(24px, calc(21.183px + 0.751vw), 32px);
+
+    --login-button-width: 194px;
+    --login-button-height: 87px;
+
+    --footer-pd-inline: clamp(20px, calc(-1.127px + 5.634vw), 80px);
+    --header-pd-inline: clamp(20px, calc(-1.127px + 5.634vw), 80px);
+}
+
+@media (width <= 768px){
+    :root{
+        --hero-width: 100%;
+        --banner-padding-inline: 0px;
+        --h3-font-size: 22px;
+    }    
+}
+
+@media (width <= 375px){
+    :root{
+        --hero-btn-pd: 20px;
+        --hero-text-font-size: 24px;
+        --hero-btn-font-size: 24px;
+    }    
+}

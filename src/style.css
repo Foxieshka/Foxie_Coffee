@@ -1,0 +1,76 @@
+@import './variables';
+@import './assets/fonts/fonts.css';
+@import './styles/header.css';
+@import './styles/footer.css';
+@import './styles/card.css';
+@import './styles/hero.css';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;  
+  min-width: 375px;
+  margin-inline: auto;
+  background-color: var(--bg);
+  box-sizing: border-box;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+h1,
+h2 {  
+  font-weight: bold;
+  color: var(--text-h);
+  margin-bottom: var(--heading-mg-bottom);
+}
+
+a{
+  color: var(--link);  
+  font-family: inherit;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  color: var(--text);
+  text-transform: uppercase;  
+}
+
+h2 {
+  font-size: var(--h2-font-size);  
+}
+
+h3{
+  font-size: 28px;
+}
+
+p {
+  margin: 0;
+}
+
+.catalog__list{
+  display: flex;
+  flex-wrap: wrap;  
+  gap: clamp(34px, calc(10.761px + 6.197vw), 100px);
+}
+
+@media (width <= 768px) {
+  .catalog__list{
+    justify-content: flex-end;
+  }
+}
+
+main{
+  margin-inline: clamp(20px, calc(-1.127px + 5.634vw), 80px);
+  margin-top: var(--main-mg-block-start);
+  margin-bottom: var(--main-mg-block-end);
+}
+
+button{
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}

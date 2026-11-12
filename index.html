@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>foxie_coffee</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Лого -->
+      <a href="/" class="header__logo">
+        <img src="/logo.svg" 
+        alt="Hot Choco Late" 
+        width="162" height="117"/>
+      </a>
+      <!-- Навигация -->
+      <nav class="header__nav" id="nav" 
+      aria-label="Главное меню">
+        <ul class="header__list">
+          <li><a href="#about" class="header__link">О нас</a></li>
+          <li><a href="#catalog" class="header__link">Каталог</a></li>
+          <li><a href="#hero" class="header__link">Главная</a></li>
+        </ul>
+        <!-- Кнопка Войти -->
+        <button class="header__btn">Войти</button> 
+        <!-- Кнопка Закрыть меню -->
+        <button class="header__close" 
+        aria-label="Закрыть меню" aria-controls="nav">
+        </button>
+      </nav>           
+      <!-- Свернуть меню -->
+      <button class="header__burger"
+        aria-label="Открыть меню" 
+        aria-expanded="false" 
+        aria-controls="nav">        
+      </button>
+    </header>
+    <main>
+      <!-- Hero секция (баннер)-->
+      <section class="hero">
+        <h1 class="hero__title">Лисичкина кофейня</h1>
+        <div class="hero__banner">
+          <p class="hero__text">Тут должно быть описание, но автор устал.</p>
+          <a href="#catalog" class="hero__btn">Подробнее</a>
+        </div>
+      </section>
+      <!-- Каталог -->
+      <section class="catalog" id="catalog">
+        <h2 class="catalog__title">Наш ассортимент :3</h2>
+        <ul class="catalog__list" id="cards-list">
+          <!-- карточки появятся здесь через JS -->
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="/logo.svg" 
+        alt="Hot Choco Late" 
+        width="162" height="117"/>
+      <p class="footer__copy">© Created by Foxieshka</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  <template id="card-template">
+    <article class="card">
+      <h3 class="card__title"></h3>
+      <img class="card__img"/>
+      <p class="card__text"></p>
+      <button class="card__btn">
+        <span class="card__btn__text">Заказать</span>        
+      </button>
+    </article>
+  </template>
+</html>
