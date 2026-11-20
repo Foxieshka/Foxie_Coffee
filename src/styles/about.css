@@ -1,0 +1,43 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.about__title{
+    margin: 0;
+    align-self: flex-start;
+}
+
+.about__text{
+    font-size: 32px;
+}
+
+.stat__value{
+    font-family: 'Din Pro Black';
+    font-size: 96px;
+    display: flex;
+    align-items: baseline;
+}
+
+.stat__num{
+    font-variant-numeric: tabular-nums;
+}
+
+.stat__label{
+    font-size: 32px;
+}
+
+.about__stats{
+    display: flex;
+    gap: 27px;
+    color: var(--heading);
+}
+
+.stat{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

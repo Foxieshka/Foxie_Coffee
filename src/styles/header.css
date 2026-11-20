@@ -65,7 +65,7 @@
         align-items: center;
         gap: 38px;
         padding: 97px 90px 48px;    /* сверху место под крестик/бургер */
-        background: #B8C5CF;
+        background: var(--menu);
         margin-left: 0;             /* сбрасываем десктопный auto */
         z-index: 2;
         transform: translateX(100%);

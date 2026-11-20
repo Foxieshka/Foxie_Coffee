@@ -1,8 +1,11 @@
 :root{
     --text: #333333;    
     --bg: #EBEFF2;
+    --heading: #243E52;
     --link: #000;
     --link-hover: #243E52;
+    --menu: #B8C5CF;
+
     --h1-font-size: 48px;
     --h2-font-size: 48px;
     --h3-font-size: 28px;
@@ -16,7 +19,6 @@
     --banner-padding-top: 274px;
     --banner-padding-bottom: 113px;
 
-    --hero-mg-bottom: 51px;
     --hero-width: 91%;
     --hero-btn-pd: 30px;
     --hero-text-font-size: 28px;
@@ -32,10 +34,19 @@
     --header-pd-inline: clamp(20px, calc(-1.127px + 5.634vw), 80px);
 }
 
+:root.dark-theme{
+    --text: #333333;    
+    --bg: #EBEFF2;
+    --heading: #243E52;
+    --link: #000;
+    --link-hover: #243E52;
+    --menu: #B8C5CF;
+}
+
 @media (width <= 768px){
     :root{
         --hero-width: 100%;
-        --banner-padding-inline: 0px;
+        --banner-padding-inline: 10px;
         --h3-font-size: 22px;
     }    
 }

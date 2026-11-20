@@ -3,7 +3,7 @@ export const products = [
         id: 1,
         title: 'Кофеек с молоком',
         text: 'Специально для уставших разработчиков.',
-        img: '/images/coffee.webp',
+        img: '/images/coffee.jpg',
     },
     {
         id: 2,
@@ -17,4 +17,22 @@ export const products = [
         text: 'Любимое лакомство лисичек (и окрестных котиков).',
         img: '/images/hot_chocolate.jpg',
     },
+    {
+        id: 4,
+        title: 'Черничный мохито',
+        text: 'Холодный, свежий, для тех, кто устал от суеты.',
+        img: '/images/mojito.jpg',
+    },
+    {
+        id: 5,
+        title: 'Утренний шорох',
+        text: 'Капучино с корицей, чтобы проснуться.',
+        img: '/images/cinnamon.jpg'
+    },
+    {
+        id: 6,
+        title: 'Лимонный поссет',
+        text: 'Цитрусовое лакомство, необычный десерт к чашке кофе.',
+        img: '/images/lemon.jpg'
+    }
 ];
